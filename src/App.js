@@ -5,10 +5,11 @@ import Home from './components/Home/Home';
 import Meals from './components/Meals/Meals';
 import Meal from './components/Meal/Meal';
 import NotFound from './components/NotFound/NotFound.js'
+import MealDetails from './components/MealDetails/MealDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div >
         <div>
           <Router>
             <Header></Header>
@@ -22,8 +23,8 @@ function App() {
               <Route exact path='/meals'>
                 <Meals></Meals>
               </Route>
-              <Route exact path='/meal/:mealId'>
-                <Meal></Meal>
+              <Route exact path='/meal/:idMeal'>
+                <MealDetails></MealDetails>
               </Route>
               <Route>
                 <NotFound></NotFound>

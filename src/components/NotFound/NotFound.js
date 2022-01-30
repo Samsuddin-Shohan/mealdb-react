@@ -3,7 +3,7 @@ import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div>
+        <div id='not-found-section'>
             <h1>Not Found</h1>
         </div>
     );
